@@ -18,9 +18,9 @@ function setup() {
   duracion = createInput();
 
   opciones = createRadio();
-  radio.option("fadeIn");
-  radio.option("fadeOut");
-  radio.option("heartbeat");
+  opciones.option("fadeIn");
+  opciones.option("fadeOut");
+  opciones.option("heartbeat");
 
   prueba = createButton('Ejecutar');
   prueba.mousePressed(vibrar);
@@ -30,7 +30,7 @@ function setup() {
 
 
 function vibrar(){
-  var val = radio.value();
+  var val = opciones.value();
   createP(val);
   switch(val){
     case 'fadeIn':
