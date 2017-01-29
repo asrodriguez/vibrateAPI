@@ -31,6 +31,8 @@ function draw(){
 
 	prueba.mousePressed(vibrar);
 
+	duracion.value == 
+
 
 }
 
@@ -42,14 +44,17 @@ function vibrar(){
 	switch(val){
 		case 'fadeIn':
 		Haptics.fadeIn(duracion.value());
+		return false;
 		break;
 		case 'fadeOut':
 		Haptics.fadeOut(duracion.value());
+		return false;
 		break;
 		case 'heartbeat':
 		Haptics.heartbeat(duracion.value());
+		return false;
 		break;
 	}
-
+return false;
 }
 
