@@ -30,11 +30,7 @@ function setup() {
 function draw(){
 
 	prueba.mousePressed(vibrar);
-
-	duracion.value == 
-
-
-}
+	}
 
 
 
