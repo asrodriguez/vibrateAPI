@@ -11,7 +11,7 @@ var opciones;
 
 function setup() {
 
-  noCanvas(); 
+	//noCanvas(); 
   // d_fadeOut = select(#d_fadeOut);
   // fadeOut = select(#fadeOut);
   // fadeOut.mousePressed(runFadeOut());
@@ -29,7 +29,7 @@ function setup() {
 
 function draw(){
 
-  prueba.mousePressed(vibrar);
+	prueba.mousePressed(vibrar);
 
 
 }
@@ -37,24 +37,19 @@ function draw(){
 
 
 function vibrar(){
-  var val = opciones.value();
-  createP(val);
-  switch(val){
-    case 'fadeIn':
-    Haptics.fadeIn(duracion.value());
-    break;
- case 'fadeOut':
-    Haptics.fadeOut(duracion.value());
-    break;
- case 'heartbeat':
-    Haptics.heartbeat(duracion.value());
-    break;
- 
-  }
-   
-
- 
-
+	var val = opciones.value();
+	createP(val);
+	switch(val){
+		case 'fadeIn':
+		Haptics.fadeIn(duracion.value());
+		break;
+		case 'fadeOut':
+		Haptics.fadeOut(duracion.value());
+		break;
+		case 'heartbeat':
+		Haptics.heartbeat(duracion.value());
+		break;
+	}
 
 }
 
