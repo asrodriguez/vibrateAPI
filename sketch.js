@@ -21,10 +21,17 @@ function setup() {
   opciones.option("fadeIn");
   opciones.option("fadeOut");
   opciones.option("heartbeat");
+  opciones.style('width','60px');
 
   prueba = createButton('Ejecutar');
+}
+
+
+function draw(){
+
   prueba.mousePressed(vibrar);
-  
+
+
 }
 
 
