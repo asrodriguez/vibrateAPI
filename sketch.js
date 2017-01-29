@@ -24,8 +24,8 @@ function setup() {
 
 function vibrar(){
  createP(duracion.value());
-// Haptics.vibrate(duracion.value());
-navigator.vibrate([1000, 500, 2000]);
+ Haptics.vibrate(duracion.value());
+//navigator.vibrate([1000, 500, 2000]);
 
 }
 
