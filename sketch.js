@@ -6,6 +6,9 @@ var gui;
 var prueba;
 var duracion;
 
+
+var opciones;
+
 function setup() {
 
   noCanvas(); 
@@ -14,22 +17,37 @@ function setup() {
   // fadeOut.mousePressed(runFadeOut());
   duracion = createInput();
 
-  prueba = createButton('prueba');
+  opciones = createRadio();
+  radio.option("fadeIn");
+  radio.option("fadeOut");
+  radio.option("heartbeat");
+
+  prueba = createButton('Ejecutar');
   prueba.mousePressed(vibrar);
   
-
 }
 
 
 
 function vibrar(){
- createP(duracion.value());
- Haptics.vibrate(duracion.value());
-//navigator.vibrate([1000, 500, 2000]);
+  var val = radio.value();
+  createP(val);
+  switch(val){
+    case 'fadeIn':
+    Haptics.fadeIn(duracion.value());
+    break;
+ case 'fadeOut':
+    Haptics.fadeOut(duracion.value());
+    break;
+ case 'heartbeat':
+    Haptics.heartbeat(duracion.value());
+    break;
+ 
+  }
+   
+
+ 
+
 
 }
 
-// function runFadeOut(){
-//   Haptics.fadeIn([500, 100, 500]);
-
-// }
