@@ -11,7 +11,7 @@ var d_heartBeat;
 
 function setup() {
 
-  noCanvas(); 
+  //noCanvas(); 
   
   createP('a');
   d_fadeOut = createInput();
