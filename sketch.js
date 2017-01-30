@@ -12,20 +12,18 @@ var d_heartBeat;
 function setup() {
 
   noCanvas(); 
-  // d_fadeOut = select(#d_fadeOut);
-  // fadeOut = select(#fadeOut);
-  // fadeOut.mousePressed(runFadeOut());
-  createP();
+  
+  createP("--");
   d_fadeOut = createInput();
   fadeOut = createButton('FadeOut');
   fadout.mousePressed(exeFadeOut);
 
-  createP();
+  createP("--");
   d_fadeIn = createInput();
   fadeIn = createButton('FadeIn');
   fadeIn.mousePressed(exeFadeIn);
 
-  createP();
+  createP("--");
   d_heartBeat = createInput();
   heartBeat = createButton('HeartBeat');
   heartBeat.mousePressed(exeHeartBeat);
