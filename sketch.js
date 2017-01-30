@@ -2,55 +2,55 @@
 var fadeOut;
 var d_fadeOut;
 
-var gui;
-var prueba;
-var duracion;
+var fadeIn;
+var d_fadeIn;
 
+var heartBeat;
+var d_heartBeat;
 
-var opciones;
 
 function setup() {
 
-	//noCanvas(); 
+  noCanvas(); 
   // d_fadeOut = select(#d_fadeOut);
   // fadeOut = select(#fadeOut);
   // fadeOut.mousePressed(runFadeOut());
-  duracion = createInput();
+  createP();
+  d_fadeOut = createInput();
+  fadeOut = createButton('FadeOut');
+  fadout.mousePressed(exeFadeOut);
 
-  opciones = createRadio();
-  opciones.option("fadeIn");
-  opciones.option("fadeOut");
-  opciones.option("heartbeat");
-  opciones.style('width','60px');
+  createP();
+  d_fadeIn = createInput();
+  fadeIn = createButton('FadeIn');
+  fadeIn.mousePressed(exeFadeIn);
 
-  prueba = createButton('Ejecutar');
+  createP();
+  d_heartBeat = createInput();
+  heartBeat = createButton('HeartBeat');
+  heartBeat.mousePressed(exeHeartBeat);
+
 }
 
 
-function draw(){
-
-	prueba.mousePressed(vibrar);
-	}
-
-
-
-function vibrar(){
-	var val = opciones.value();
+function exeFadeOut(){
+	var val = d_fadeOut.value();
 	createP(val);
-	switch(val){
-		case 'fadeIn':
-		Haptics.fadeIn(duracion.value());
-		return false;
-		break;
-		case 'fadeOut':
-		Haptics.fadeOut(duracion.value());
-		return false;
-		break;
-		case 'heartbeat':
-		Haptics.heartbeat(duracion.value());
-		return false;
-		break;
-	}
-return false;
+	Haptics.fadeOut(val);
 }
+
+
+function exeFadeIn(){
+	var val = d_fadeIn.value();
+	createP(val);
+	Haptics.fadeIn(val);
+}
+
+function exeHeartBeat(){
+	var val = d_heartBeat.value();
+	createP(val);
+	Haptics.heartBeat(val);
+}
+
+
 
