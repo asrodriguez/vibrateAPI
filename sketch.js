@@ -13,17 +13,17 @@ function setup() {
 
   noCanvas(); 
   
-  createP('--');
+  //createP('--');
   d_fadeOut = createInput();
   fadeOut = createButton('FadeOut');
   fadeOut.mousePressed(exeFadeOut);
 
-  createP('--');
+  //createP('--');
   d_fadeIn = createInput();
   fadeIn = createButton('FadeIn');
   fadeIn.mousePressed(exeFadeIn);
 
-  createP('--');
+  //createP('--');
   d_heartBeat = createInput();
   heartBeat = createButton('HeartBeat');
   heartBeat.mousePressed(exeHeartBeat);
