@@ -16,17 +16,17 @@ function setup() {
   //createP('--');
   d_fadeOut = createInput();
   fadeOut = createButton('FadeOut');
-  fadeOut.mousePressed(exeFadeOut);
+  fadeOut.mousePressed(exeFadeOut());
 
   //createP('--');
   d_fadeIn = createInput();
   fadeIn = createButton('FadeIn');
-  fadeIn.mousePressed(exeFadeIn);
+  fadeIn.mousePressed(exeFadeIn());
 
   //createP('--');
   d_heartBeat = createInput();
   heartBeat = createButton('HeartBeat');
-  heartBeat.mousePressed(exeHeartBeat);
+  heartBeat.mousePressed(exeHeartBeat());
 
 }
 
