@@ -19,15 +19,15 @@ function setup() {
   createP('b');
   fadeOut.mousePressed(exeFadeOut);
 
-  // //createP('--');
-  // d_fadeIn = createInput();
-  // fadeIn = createButton('FadeIn');
-  // fadeIn.mousePressed(exeFadeIn);
+  createP('--');
+  d_fadeIn = createInput();
+  fadeIn = createButton('FadeIn');
+  fadeIn.mousePressed(exeFadeIn);
 
-  // //createP('--');
-  // d_heartBeat = createInput();
-  // heartBeat = createButton('HeartBeat');
-  // heartBeat.mousePressed(exeHeartBeat);
+  //createP('--');
+  d_heartBeat = createInput();
+  heartBeat = createButton('HeartBeat');
+  heartBeat.mousePressed(exeHeartBeat);
 
 }
 
