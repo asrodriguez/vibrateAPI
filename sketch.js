@@ -16,9 +16,10 @@ function setup() {
   createP('a');
   d_fadeOut = createInput();
   fadeOut = createButton('FadeOut');
-  createP('b');
+ 
   fadeOut.mousePressed(exeFadeOut);
-
+ createP('b');
+ 
   createP('--');
   d_fadeIn = createInput();
   fadeIn = createButton('FadeIn');
