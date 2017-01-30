@@ -16,7 +16,7 @@ function setup() {
   createP('--');
   d_fadeOut = createInput();
   fadeOut = createButton('FadeOut');
-  fadout.mousePressed(exeFadeOut);
+  fadeOut.mousePressed(exeFadeOut);
 
   createP('--');
   d_fadeIn = createInput();
