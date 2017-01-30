@@ -13,10 +13,10 @@ function setup() {
 
   noCanvas(); 
   
-  createP('--');
+  createP('a');
   d_fadeOut = createInput();
   fadeOut = createButton('FadeOut');
-  createP('---');
+  createP('b');
   fadeOut.mousePressed(exeFadeOut());
 
   //createP('--');
