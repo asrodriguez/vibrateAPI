@@ -19,7 +19,7 @@ function setup() {
    fadeOut.mousePressed(exeFadeOut);
   
 
-  /*createP('--');
+  createP('--');
   d_fadeIn = createInput();
   fadeIn = createButton('FadeIn');
   fadeIn.mousePressed(exeFadeIn);
@@ -27,19 +27,19 @@ function setup() {
   createP('--');
   d_heartBeat = createInput();
   heartBeat = createButton('HeartBeat');
-  heartBeat.mousePressed(exeHeartBeat);*/
+  heartBeat.mousePressed(exeHeartBeat);
 
   }
 
 
 function exeFadeOut(){
 	var val = d_fadeOut.value();
-	Haptics.fadeIn(int(val));
+	Haptics.fadeOut(int(val));
 	createP(val);
 	
 }
 
-/*
+
 function exeFadeIn(){
 	var val = d_fadeIn.value();
 	createP(val);
@@ -52,6 +52,3 @@ function exeHeartBeat(){
 	Haptics.heartBeat(val);
 }
 
-
-
-*/
