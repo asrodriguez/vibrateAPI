@@ -2,12 +2,12 @@
 var fadeOut;
 var d_fadeOut;
 
-var fadeIn;
+/*var fadeIn;
 var d_fadeIn;
 
 var heartBeat;
 var d_heartBeat;
-
+*/
 
 function setup() {
 
@@ -19,7 +19,7 @@ function setup() {
   fadeOut.mousePressed(exeFadeOut);
   
 
-  createP('--');
+  /*createP('--');
   d_fadeIn = createInput();
   fadeIn = createButton('FadeIn');
   fadeIn.mousePressed(exeFadeIn);
@@ -27,7 +27,7 @@ function setup() {
   createP('--');
   d_heartBeat = createInput();
   heartBeat = createButton('HeartBeat');
-  heartBeat.mousePressed(exeHeartBeat);
+  heartBeat.mousePressed(exeHeartBeat);*/
 
 }
 
@@ -36,10 +36,9 @@ function exeFadeOut(){
 	var val = d_fadeOut.value();
 	createP(val);
 	Haptics.fadeOut(val);
-	navigator.vibrate(val);
 }
 
-
+/*
 function exeFadeIn(){
 	var val = d_fadeIn.value();
 	createP(val);
@@ -54,3 +53,4 @@ function exeHeartBeat(){
 
 
 
+*/
