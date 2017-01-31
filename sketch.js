@@ -34,8 +34,9 @@ function setup() {
 
 function exeFadeOut(){
 	var val = d_fadeOut.value();
-	createP(val);
 	Haptics.fadeOut(val);
+	createP(val);
+	
 }
 
 /*
