@@ -43,12 +43,12 @@ function exeFadeOut(){
 function exeFadeIn(){
 	var val = d_fadeIn.value();
 	createP(val);
-	Haptics.fadeIn(val);
+	Haptics.fadeIn(int(val));
 }
 
 function exeHeartBeat(){
 	var val = d_heartBeat.value();
 	createP(val);
-	Haptics.heartBeat(val);
+	Haptics.heartBeat(int(val);
 }
 
