@@ -2,12 +2,12 @@
 var fadeOut;
 var d_fadeOut;
 
-/*var fadeIn;
+var fadeIn;
 var d_fadeIn;
 
 var heartBeat;
 var d_heartBeat;
-*/
+
 
 function setup() {
 
