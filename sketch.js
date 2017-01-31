@@ -13,10 +13,10 @@ function setup() {
 
   //noCanvas(); 
   
-  // createP('a');
-  // d_fadeOut = createInput();
-  // fadeOut = createButton('FadeOut');
-  // fadeOut.mousePressed(exeFadeOut);
+   createP(' ');
+   d_fadeOut = createInput();
+   fadeOut = createButton('FadeOut');
+   fadeOut.mousePressed(exeFadeOut);
   
 
   /*createP('--');
@@ -29,16 +29,13 @@ function setup() {
   heartBeat = createButton('HeartBeat');
   heartBeat.mousePressed(exeHeartBeat);*/
 
-  Haptics.fadeIn(1000);
-
-}
+  }
 
 
 function exeFadeOut(){
 	var val = d_fadeOut.value();
 	createP(val);
-	//Haptics.fadeOut(val);
-	window.navigator.vibrate(val);
+	Haptics.fadeOut(val);
 }
 
 /*
