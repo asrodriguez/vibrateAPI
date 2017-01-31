@@ -13,10 +13,10 @@ function setup() {
 
   //noCanvas(); 
   
-  createP('a');
-  d_fadeOut = createInput();
-  fadeOut = createButton('FadeOut');
-  fadeOut.mousePressed(exeFadeOut);
+  // createP('a');
+  // d_fadeOut = createInput();
+  // fadeOut = createButton('FadeOut');
+  // fadeOut.mousePressed(exeFadeOut);
   
 
   /*createP('--');
@@ -28,6 +28,8 @@ function setup() {
   d_heartBeat = createInput();
   heartBeat = createButton('HeartBeat');
   heartBeat.mousePressed(exeHeartBeat);*/
+
+  Haptics.fadeIn(1000);
 
 }
 
