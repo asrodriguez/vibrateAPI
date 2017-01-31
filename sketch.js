@@ -14,18 +14,18 @@ function setup() {
   //noCanvas(); 
   
    createP('FadeOut');
-   d_fadeOut = createInput();
+   d_fadeOut = createInput(1000);
    fadeOut = createButton('FadeOut');
    fadeOut.mousePressed(exeFadeOut);
   
 
   createP('FadeIn');
-  d_fadeIn = createInput();
+  d_fadeIn = createInput(1500);
   fadeIn = createButton('FadeIn');
   fadeIn.mousePressed(exeFadeIn);
 
   createP('HeartBeat');
-  d_heartBeat = createInput();
+  d_heartBeat = createInput(1800);
   heartBeat = createButton('HeartBeat');
   heartBeat.mousePressed(exeHeartBeat);
 
@@ -48,6 +48,6 @@ function exeFadeIn(){
 function exeHeartBeat(){
 	var val = d_heartBeat.value();
 	createP(val);
-	Haptics.heartBeat(int(val);
+	Haptics.heartBeat(int(val));
 }
 
