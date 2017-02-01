@@ -1,4 +1,3 @@
-
 var fadeOut;
 var d_fadeOut;
 
@@ -9,15 +8,17 @@ var heartBeat;
 var d_heartBeat;
 
 
+var gui;
+
 function setup() {
 
-  //noCanvas(); 
-  
-   createP('FadeOut');
-   d_fadeOut = createInput(1000);
-   fadeOut = createButton('FadeOut');
-   fadeOut.mousePressed(exeFadeOut);
-  
+  createCanvas(windowWidth, windowHeight);
+   gui = createGui('p5.gui');
+
+  createP('FadeOut');
+  d_fadeOut = createInput(1000);
+  fadeOut = createButton('FadeOut');
+  fadeOut.mousePressed(exeFadeOut);
 
   createP('FadeIn');
   d_fadeIn = createInput(1500);
@@ -29,25 +30,40 @@ function setup() {
   heartBeat = createButton('HeartBeat');
   heartBeat.mousePressed(exeHeartBeat);
 
-  }
+ // Only call draw when then gui is changed
+  noLoop();
 
 
-function exeFadeOut(){
-	var val = d_fadeOut.value();
-	 createP(val);
-   Haptics.fadeOut(int(val));
 }
 
 
-function exeFadeIn(){
-	var val = d_fadeIn.value();
-	createP(val);
-	Haptics.fadeIn(int(val));
+
+function draw() {
+
+  // this is a piece of cake
+  background(0);
+  fill(myColor);
+  angleMode(DEGREES);
+  arc(width/2, height/2, 100, 100, myAngle/2, 360 - myAngle/2, PIE);
+
 }
 
-function exeHeartBeat(){
-	var val = d_heartBeat.value();
-	createP(val);
-	Haptics.heartbeat(int(val));
+
+function exeFadeOut() {
+  var val = d_fadeOut.value();
+  createP(val);
+  Haptics.fadeOut(int(val));
 }
 
+
+function exeFadeIn() {
+  var val = d_fadeIn.value();
+  createP(val);
+  Haptics.fadeIn(int(val));
+}
+
+function exeHeartBeat() {
+  var val = d_heartBeat.value();
+  createP(val);
+  Haptics.heartbeat(int(val));
+}
