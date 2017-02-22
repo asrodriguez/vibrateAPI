@@ -8,7 +8,7 @@ var heartBeat;
 var d_heartBeat;
 
 
-var gui;
+//var gui;
 
 function setup() {
 
