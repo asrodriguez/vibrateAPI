@@ -40,10 +40,10 @@ function setup() {
 function draw() {
 
   // this is a piece of cake
-  background(0);
-  fill(myColor);
-  angleMode(DEGREES);
-  arc(width/2, height/2, 100, 100, myAngle/2, 360 - myAngle/2, PIE);
+  // background(0);
+  // fill(myColor);
+  // angleMode(DEGREES);
+  // arc(width/2, height/2, 100, 100, myAngle/2, 360 - myAngle/2, PIE);
 
 }
 
