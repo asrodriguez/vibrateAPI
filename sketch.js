@@ -12,7 +12,7 @@ var d_heartBeat;
 
 function setup() {
 
-  createCanvas(windowWidth, windowHeight);
+ // createCanvas(windowWidth, windowHeight);
 
   createP('FadeOut');
   d_fadeOut = createInput(1000);
