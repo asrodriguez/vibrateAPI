@@ -13,7 +13,6 @@ var gui;
 function setup() {
 
   createCanvas(windowWidth, windowHeight);
-   gui = createGui('p5.gui');
 
   createP('FadeOut');
   d_fadeOut = createInput(1000);
