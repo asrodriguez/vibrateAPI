@@ -18,8 +18,7 @@ function setup() {
 
    // Create Layout GUI
   gui = createGui('Editor feedback háptico');
-  //gui.addGlobals('numShapes', 'bigRadius', 'shape', 'label', 'radius',
-  'drawFill', 'fillColor', 'drawStroke', 'strokeColor', 'strokeWidth');
+  //gui.addGlobals('numShapes', 'bigRadius', 'shape', 'label', 'radius',  'drawFill', 'fillColor', 'drawStroke', 'strokeColor', 'strokeWidth');
 
 
   button = createButton('Botón');
@@ -53,7 +52,7 @@ function setup() {
 function draw() {
 
 
-   clear();
+   //clear();
 
 
   // this is a piece of cake
