@@ -8,11 +8,24 @@ var heartBeat;
 var d_heartBeat;
 
 
-//var gui;
+var gui;
+
+var button;
 
 function setup() {
 
- // createCanvas(windowWidth, windowHeight);
+  createCanvas(windowWidth, windowHeight);
+
+   // Create Layout GUI
+  gui = createGui('Editor feedback háptico');
+  //gui.addGlobals('numShapes', 'bigRadius', 'shape', 'label', 'radius',
+  'drawFill', 'fillColor', 'drawStroke', 'strokeColor', 'strokeWidth');
+
+
+  button = createButton('Botón');
+  button.position(19, 19);
+  button.mousePressed(chooseButton);
+
 
   createP('FadeOut');
   d_fadeOut = createInput(1000);
@@ -39,12 +52,15 @@ function setup() {
 
 function draw() {
 
+
+   clear();
+
+
   // this is a piece of cake
   // background(0);
   // fill(myColor);
-  // angleMode(DEGREES);
-  // arc(width/2, height/2, 100, 100, myAngle/2, 360 - myAngle/2, PIE);
 
+  
 }
 
 
@@ -65,4 +81,10 @@ function exeHeartBeat() {
   var val = d_heartBeat.value();
   createP(val);
   Haptics.heartbeat(int(val));
+}
+
+
+function chooseButton(){
+ button.position(19, 50);
+
 }
