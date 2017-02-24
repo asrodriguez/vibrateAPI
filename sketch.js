@@ -17,7 +17,7 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
 
    // Create Layout GUI
-  gui = createGui('Editor feedback háptico');
+  //gui = createGui('Editor feedback háptico');
   //gui.addGlobals('numShapes', 'bigRadius', 'shape', 'label', 'radius',  'drawFill', 'fillColor', 'drawStroke', 'strokeColor', 'strokeWidth');
 
 
