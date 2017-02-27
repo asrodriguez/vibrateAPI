@@ -10,7 +10,7 @@ var d_heartBeat;
 
 var gui;
 
-var button;
+var widget1, widget2;
 
 function setup() {
 
@@ -21,10 +21,11 @@ function setup() {
   //gui.addGlobals('numShapes', 'bigRadius', 'shape', 'label', 'radius',  'drawFill', 'fillColor', 'drawStroke', 'strokeColor', 'strokeWidth');
 
 
-  button = createButton('Botón');
-  button.position(19, 19);
-  button.mousePressed(chooseButton);
+  widget1 = createButton('Widget 1');
+  widget1.position(19, 19);
+  widget1.mousePressed(chooseButton);
 
+  
 
   createP('FadeOut');
   d_fadeOut = createInput(1000);
@@ -83,7 +84,8 @@ function exeHeartBeat() {
 }
 
 
-function chooseButton(){
- button.position(19, 50);
+function chooseButton(button){
+        
+    createP('Boton elegido')
 
 }
