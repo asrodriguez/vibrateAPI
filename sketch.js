@@ -88,7 +88,7 @@ function exeHeartBeat() {
 
 function chooseButton(button){
   
-  selected = not(selected);
+  selected = !selected;
 
   if (selected) then {
    createP("Sin elegir")
