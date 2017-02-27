@@ -26,8 +26,9 @@ function setup() {
   widget1.position(19, 19);
   widget1.mousePressed(chooseButton);
 
-  selected = false;
   
+  selected = false;
+  createP(selected);
 
   createP('FadeOut');
   d_fadeOut = createInput(1000);
@@ -93,7 +94,7 @@ function chooseButton(button){
   if (selected) then {
    createP("Sin elegir")
   } else {
-  createP("Boton elegido");
+  createP("Boton elegido" );
 }
 
 }
