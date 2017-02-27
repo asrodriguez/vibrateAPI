@@ -11,6 +11,7 @@ var d_heartBeat;
 var gui;
 
 var widget1, widget2;
+var selected;
 
 function setup() {
 
@@ -25,6 +26,7 @@ function setup() {
   widget1.position(19, 19);
   widget1.mousePressed(chooseButton);
 
+  selected = false;
   
 
   createP('FadeOut');
@@ -85,7 +87,13 @@ function exeHeartBeat() {
 
 
 function chooseButton(button){
+  
+  selected = not(selected);
 
-    createP("Boton elegido");
+  if (selected) then {
+   createP("Sin elegir")
+  } else {
+  createP("Boton elegido");
+}
 
 }
