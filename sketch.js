@@ -85,7 +85,7 @@ function exeHeartBeat() {
 
 
 function chooseButton(button){
-        
-    createP('Boton elegido')
+
+    createP("Boton elegido");
 
 }
