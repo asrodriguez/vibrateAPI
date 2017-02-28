@@ -81,7 +81,7 @@ function exeHeartBeat() {
 }
 
 
-/*function chooseButton(){
+function chooseButton(){
 
   selected = !selected;
 
@@ -89,8 +89,8 @@ function exeHeartBeat() {
    createP("Sin elegir")
  } else {
   createP("Boton elegido" );
-}*/
-
+}
+}
 
 function concatenar(){
   Haptics.createPattern(Haptics.fadeIn(1000), Haptics.fadeOut(1000));
