@@ -51,16 +51,15 @@ function setup() {
 
 
 
-function draw() {
+/*function draw() {
 
    //clear();
   // this is a piece of cake
   // background(0);
   // fill(myColor);
 
-  
 }
-
+*/
 
 function exeFadeOut() {
   var val = d_fadeOut.value();
@@ -82,7 +81,7 @@ function exeHeartBeat() {
 }
 
 
-function chooseButton(){
+/*function chooseButton(){
 
   selected = !selected;
 
@@ -90,7 +89,7 @@ function chooseButton(){
    createP("Sin elegir")
  } else {
   createP("Boton elegido" );
-}
+}*/
 
 
 function concatenar(){
