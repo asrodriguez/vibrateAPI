@@ -15,7 +15,7 @@ var selected;
 
 function setup() {
 
-  createCanvas(windowWidth, windowHeight);
+  //createCanvas(windowWidth, windowHeight);
 
    // Create Layout GUI
   //gui = createGui('Editor feedback háptico');
@@ -24,9 +24,9 @@ function setup() {
 
   widget1 = createButton('Widget 1');
   widget1.position(19, 19);
-//  widget1.mousePressed(chooseButton);
- widget1.mousePressed(concatenar);
-  
+  // widget1.mousePressed(chooseButton);
+  widget1.mousePressed(concatenar);
+
   selected = false;
   createP(selected);
 
@@ -47,18 +47,13 @@ function setup() {
 
  // Only call draw when then gui is changed
   noLoop();
-
-
 }
 
 
 
 function draw() {
 
-
    //clear();
-
-
   // this is a piece of cake
   // background(0);
   // fill(myColor);
@@ -88,12 +83,12 @@ function exeHeartBeat() {
 
 
 function chooseButton(){
-  
+
   selected = !selected;
 
   if (selected) {
    createP("Sin elegir")
-  } else {
+ } else {
   createP("Boton elegido" );
 }
 
