@@ -82,14 +82,12 @@ function exeHeartBeat() {
 
 
 function chooseButton(){
-
   selected = !selected;
-
   if (selected) {
    createP("Sin elegir")
- } else {
+  } else {
   createP("Boton elegido" );
-}
+  }
 }
 
 function concatenar(){
