@@ -94,11 +94,10 @@ function chooseButton(){
 
 
 function concatenar(){
-
   Haptics.createPattern(Haptics.fadeIn(1000), Haptics.fadeOut(1000));
 }
 
-}
+
 
 
 
