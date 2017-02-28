@@ -91,7 +91,9 @@ function chooseButton(){
 }
 
 function concatenar(){
-  Haptics.createPattern(Haptics.fadeOut(2000), Haptics.fadeIn(2000),Haptics.heartbeat(3000));
+  Haptics.createPattern(Haptics.fadeOut(2000));
+  //Haptics.createPattern(Haptics.fadeOut(2000), Haptics.fadeIn(2000),Haptics.heartbeat(3000));
+  //Haptics.createPattern(Haptics.fadeOut(2000), Haptics.fadeIn(2000),Haptics.heartbeat(3000));
 }
 
 
