@@ -25,7 +25,7 @@ function setup() {
   widget1 = createButton('Widget 1');
   widget1.position(19, 19);
   //widget1.mousePressed(chooseButton);
-  widget1.mousePressed(concatenar(a, b, c));
+  widget1.mousePressed(fadeInOut);
 
 
 
@@ -93,29 +93,12 @@ function chooseButton(){
   }
 }
 
-function concatenar() {
+function fadeInOut() {
   //Haptics.createPattern(Haptics.fadeOut(2000));
   //Haptics.concatenatePatternFuncs(Haptics.heartbeat(1000), Haptics.fadeOut(5000));
   //Haptics.createPattern(Haptics.fadeOut(2000), Haptics.fadeIn(2000),Haptics.heartbeat(3000));
-
-
-  var funcs = arguments;
-  var len = arguments.length;
-
-  //createP(len);
-
-  /*return function(duration) {
-    var i = 0,
-      d = duration / len;
-
-    function executeCurrentFunc() {
-      funcs[i](d);
-    }
-
-    for (i = 0; i < len; i += 1) {
-      global.setTimeout(executeCurrentFunc, d);
-    }
-  };*/
+  
+  Haptics.patternFactory(Haptics.fadeIn, Haptics.fadeOut);
 
 }
 
