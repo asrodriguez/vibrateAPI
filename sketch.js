@@ -100,6 +100,8 @@ function fadeInOut() {
   
   Haptics.patternFactory(Haptics.fadeIn(1000), Haptics.fadeOut(2000));
 
+  createP("acá adentro")
+
 }
 
 
