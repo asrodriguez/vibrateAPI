@@ -90,10 +90,31 @@ function chooseButton(){
   }
 }
 
-function concatenar(){
+function concatenar(Haptics.heartbeat(1000), Haptics.fadeOut(5000)){
   //Haptics.createPattern(Haptics.fadeOut(2000));
-  Haptics.concatenatePatternFuncs(Haptics.heartbeat(1000), Haptics.fadeOut(5000));
+  //Haptics.concatenatePatternFuncs(Haptics.heartbeat(1000), Haptics.fadeOut(5000));
   //Haptics.createPattern(Haptics.fadeOut(2000), Haptics.fadeIn(2000),Haptics.heartbeat(3000));
+
+
+            var funcs = arguments,
+            len = arguments.length;
+
+            createP(len);
+
+        return function (duration) {
+            var i = 0,
+                d = duration / len;
+
+            function executeCurrentFunc() {
+                funcs[i](d);
+            }
+
+            for (i = 0; i < len; i += 1) {
+                global.setTimeout(executeCurrentFunc, d);
+            }
+        };
+
+
 }
 
 
