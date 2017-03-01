@@ -24,8 +24,8 @@ function setup() {
 
   widget1 = createButton('Widget 1');
   widget1.position(19, 19);
-  // widget1.mousePressed(chooseButton);
-  widget1.mousePressed(concatenar(Haptics.heartbeat(1000), Haptics.fadeOut(5000)));
+   widget1.mousePressed(chooseButton);
+  //widget1.mousePressed(concatenar(Haptics.heartbeat(1000), Haptics.fadeOut(5000)));
 
 
 
