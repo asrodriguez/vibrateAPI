@@ -25,7 +25,7 @@ function setup() {
   widget1 = createButton('Widget 1');
   widget1.position(19, 19);
   // widget1.mousePressed(chooseButton);
-  widget1.mousePressed(concatenar);
+  widget1.mousePressed(concatenar(Haptics.heartbeat(1000));
 
   selected = false;
   createP(selected);
@@ -90,7 +90,7 @@ function chooseButton(){
   }
 }
 
-function concatenar(Haptics.heartbeat(1000)) {
+function concatenar()) {
   //Haptics.createPattern(Haptics.fadeOut(2000));
   //Haptics.concatenatePatternFuncs(Haptics.heartbeat(1000), Haptics.fadeOut(5000));
   //Haptics.createPattern(Haptics.fadeOut(2000), Haptics.fadeIn(2000),Haptics.heartbeat(3000));
