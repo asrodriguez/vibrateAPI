@@ -99,7 +99,7 @@ function concatenar() {
   var funcs = arguments;
   var len = arguments.length;
 
-  createP(len);
+  //createP(len);
 
   /*return function(duration) {
     var i = 0,
