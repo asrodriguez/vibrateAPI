@@ -98,7 +98,7 @@ function fadeInOut() {
   //Haptics.concatenatePatternFuncs(Haptics.heartbeat(1000), Haptics.fadeOut(5000));
   //Haptics.createPattern(Haptics.fadeOut(2000), Haptics.fadeIn(2000),Haptics.heartbeat(3000));
   
-  Haptics.patternFactory(Haptics.fadeIn, Haptics.fadeOut);
+  Haptics.patternFactory(Haptics.fadeIn(1000), Haptics.fadeOut(2000));
 
 }
 
