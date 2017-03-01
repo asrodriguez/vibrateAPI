@@ -96,7 +96,7 @@ function concatenar(Haptics.heartbeat(1000), Haptics.fadeOut(5000)){
   //Haptics.createPattern(Haptics.fadeOut(2000), Haptics.fadeIn(2000),Haptics.heartbeat(3000));
 
 
-            var funcs = arguments,
+            var funcs = arguments;
             len = arguments.length;
 
             createP(len);
