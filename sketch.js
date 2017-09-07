@@ -25,7 +25,9 @@ function setup() {
   widget1 = createButton('Widget 1');
   widget1.position(19, 19);
   //widget1.mousePressed(chooseButton);
-  widget1.mousePressed(fadeInOut);
+  widget1.mousePressed(function() {
+    navigator.vibrate([16,25,0,25,27,25,0,24,27,23,0,22,20,21,27,19,16,16,15,13,0,8,21,0,15,8,19,13,15,16,0,19,15,21,24,22,17,23,15,24,17,25,20,25,18]);
+});
 
 
 
