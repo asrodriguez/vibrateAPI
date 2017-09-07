@@ -14,36 +14,5 @@
 <body>
 <h3>Efectos incluidos en haptics.js</h3>
   
-  <h2 id="checkboxes">Checkboxes</h2>
-<p>Vibrating after clicking a sliding checkbox is also very helpful. It feels really natural. There is a short vibration at the start, then a period of waiting whilst the checkbox is moving and then a longer vibration at the end.</p>
-<blockquote>
-<p>In this example, the checkbox will vibrate.</p>
-</blockquote>
-<div class="ui segment fluid" style="max-width: 700px; margin: 15px auto;" >
-    <div class="ui slider checkbox">
-        <input id="product-1" checked type="checkbox">
-        <label for="product-1">Duvel</label>
-    </div>
-    <div class="ui divider"></div>
-    <div class="ui slider checkbox">
-        <input id="product-2" type="checkbox">
-        <label for="product-2">Jupiler</label>
-    </div>
-</div>
-
-<pre><code class="lang-html">&lt;div class=&quot;ui slider checkbox&quot;&gt;
-    &lt;input id=&quot;product-1&quot; type=&quot;checkbox&quot;&gt;
-    &lt;label for=&quot;product-1&quot;&gt;Duvel&lt;/label&gt;
-&lt;/div&gt;
-&lt;div class=&quot;ui slider checkbox&quot;&gt;
-    &lt;input id=&quot;product-2&quot; type=&quot;checkbox&quot;&gt;
-    &lt;label for=&quot;product-2&quot;&gt;Jupiler&lt;/label&gt;
-&lt;/div&gt;
-</code></pre>
-<pre><code class="lang-javascript">$(&quot;.ui.checkbox&quot;).click(function() {
-    navigator.vibrate([5, 200, 20]);
-});
-</code></pre>
-  
 </body>
 </html>
