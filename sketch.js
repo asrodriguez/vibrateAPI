@@ -32,7 +32,7 @@ function setup() {
   
   var slider;
   slider = createSlider(0, 360, 60, 40);
-  slider.position(50, 19);
+  slider.position(150, 19);
   slider.style('width', '80px');
   var val = slider.value();
   slider.mousePressed(function() {
