@@ -29,7 +29,18 @@ function setup() {
     navigator.vibrate([16,25,0,25,27,25,0,24,27,23,0,22,20,21,27,19,16,16,15,13,0,8,21,0,15,8,19,13,15,16,0,19,15,21,24,22,17,23,15,24,17,25,20,25,18]);
 });
 
- widget2 = createButton('Widget 2');
+  
+  var slider;
+  slider = createSlider(0, 360, 60, 40);
+  slider.position(19, 49);
+  slider.style('width', '80px');
+  var val = slider.value();
+  slider.mousePressed(function() {
+    navigator.vibrate([(6,0,0,1,5,1,6,1,5,3,7,7,0,13,5,18,6,22,8,21,5,25,0,25,7,25,5,24,6)]);
+});
+
+  
+  widget2 = createButton('Widget 2');
   widget2.position(19, 49);
   //widget1.mousePressed(chooseButton);
   widget2.mousePressed(function() {
